@@ -1,0 +1,35 @@
+{
+  "name": "react-moveable-with-full-drag-select",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@scena/react-ruler": "0.2.1",
+    "classnames": "2.2.6",
+    "framework-utils": "0.3.4",
+    "intersection-observer": "0.7.0",
+    "keycon": "0.8.0",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-moveable": "0.17.0",
+    "react-scripts": "3.0.1",
+    "scenejs": "1.1.5",
+    "uuid": "3.3.3"
+  },
+  "devDependencies": {
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

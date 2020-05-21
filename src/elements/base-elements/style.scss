@@ -1,0 +1,28 @@
+.element__wrapper {
+  display: inline-flex;
+  box-sizing: border-box;
+  position: absolute;
+
+  &:hover {
+      &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: transparent;
+          border: 1px dashed blue;
+      }
+  }
+
+  &.element__selected {
+      background-color: #eee;
+  }
+
+  &.element__selectable {
+      box-sizing: border-box;
+      background-color: green!important;
+      color: #fff;
+  }
+}

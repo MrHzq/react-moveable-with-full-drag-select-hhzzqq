@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html, body, p, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, img, pre, form, fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    height: 2500px;
+}
+
+.App {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.lf__selector {
+  position: absolute;
+  background: rgba(0, 0, 255, 0.1);
+  border: 1px dashed transparent;
+  display: none;
+  z-index: 100;
+  pointer-events: none;
+
+  &.mouse__drag_LeftUp {
+      background: rgba(77, 5, 232, 0.1);
+      border-color: rgba(77, 5, 232, 1);
+  }
+
+  &.mouse__drag_LeftDown {
+      background: rgba(77, 5, 232, 0.1);
+      border-color: rgba(77, 5, 232, 1);
+  }
+
+  &.mouse__drag_RightUp {
+      background: rgba(0, 230, 64, 0.1);
+      border-color: rgba(0, 230, 64, 1);
+  }
+
+  &.mouse__drag_RightDown {
+      background: rgba(0, 230, 64, 0.1);
+      border-color: rgba(0, 230, 64, 1);
+  }
+}
+
+.element__wrapper {
+  display: inline-flex;
+  box-sizing: border-box;
+  position: absolute;
+
+  &:hover {
+      &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: transparent;
+          border: 1px dashed blue;
+      }
+  }
+
+  &.element__selected {
+      background-color: #eee;
+  }
+
+  &.element__selectable {
+      box-sizing: border-box;
+  }
+}
